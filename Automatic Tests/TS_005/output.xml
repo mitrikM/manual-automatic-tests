@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.8.1 on win32)" generated="20220718 12:30:22.533" rpa="false" schemaversion="3">
+<suite id="s1" name="TS 005" source="C:\Users\marek\OneDrive\Počítač\MarekMitrik_www-aboutyou-sk_24-4-2022\Automatic Tests\TS_005\TS_005.robot">
+<test id="s1-t1" name="TC_002" line="36">
+<kw name="Otevri browser a stranku a zkontroluj">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220718 12:30:22.796" level="INFO">Opening browser 'Chrome' to base url 'https://www.aboutyou.sk/tvoj-obchod'.</msg>
+<status status="PASS" starttime="20220718 12:30:22.795" endtime="20220718 12:30:28.229"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220718 12:30:28.229" endtime="20220718 12:30:28.356"/>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20220718 12:30:28.363" level="INFO">Current location is 'https://www.aboutyou.sk/tvoj-obchod'.</msg>
+<status status="PASS" starttime="20220718 12:30:28.356" endtime="20220718 12:30:28.363"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//button[@id='onetrust-accept-btn-handler']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220718 12:30:28.364" endtime="20220718 12:30:28.461"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@id='onetrust-accept-btn-handler']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220718 12:30:28.461" level="INFO">Clicking element '//button[@id='onetrust-accept-btn-handler']'.</msg>
+<status status="PASS" starttime="20220718 12:30:28.461" endtime="20220718 12:30:28.646"/>
+</kw>
+<status status="PASS" starttime="20220718 12:30:22.795" endtime="20220718 12:30:28.646"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath://header/div[1]/div[1]/div[3]/ul[1]/li[4]/div[1]/a[1]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220718 12:30:28.647" level="INFO">Clicking link 'xpath://header/div[1]/div[1]/div[3]/ul[1]/li[4]/div[1]/a[1]'.</msg>
+<status status="PASS" starttime="20220718 12:30:28.647" endtime="20220718 12:30:28.884"/>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>https://www.aboutyou.sk/zoznam-priani</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20220718 12:30:28.942" level="INFO">Current location is 'https://www.aboutyou.sk/zoznam-priani'.</msg>
+<status status="PASS" starttime="20220718 12:30:28.885" endtime="20220718 12:30:28.942"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220718 12:30:29.124" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220718 12:30:28.943" endtime="20220718 12:30:29.124"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220718 12:30:29.132" endtime="20220718 12:30:31.419"/>
+</kw>
+<status status="PASS" starttime="20220718 12:30:22.794" endtime="20220718 12:30:31.421"/>
+</test>
+<status status="PASS" starttime="20220718 12:30:22.535" endtime="20220718 12:30:31.427"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TS 005">TS 005</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

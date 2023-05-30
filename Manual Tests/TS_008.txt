@@ -1,0 +1,50 @@
+ID - TS_008
+Názov: Testovanie presmerovania na sociálne siete
+Popis: otestovanie funkcionality presmerovania na sociálne siete aboutyou
+Preconditions: 
+    1. funkčné pripojenie k internetu
+    2. Google Chrome prehliadač
+    3. vstupno výstupne zariadenie na zadanie vstupu a získanie výstupu
+    4. nachádzať sa na konci stránky www.aboutyou.sk 
+
+    TC_001: presmerovanie na Facebook profil 
+        očakávany výsledok: užívateľa po kliknutí na facebook logo presmeruje na facebook sránku aboutyou
+
+        1. užívateľ klikne na facebook logo 
+
+        výsledok testovania: užívateľa presmerovalo na facebook stránku 
+
+    TC_002: presmerovanie na Instagram profil 
+        očakávany výsledok: užívateľa po kliknutí na Instagram logo presmeruje na Instagram sránku aboutyou
+
+        1. užívateľ klikne na Instagram logo 
+
+        výsledok testovania: užívateľa presmerovalo na Instagram stránku 
+    
+    TC_003: presmerovanie na Twitter profil 
+        očakávany výsledok: užívateľa po kliknutí na Twitter logo presmeruje na Twitter sránku aboutyou
+
+        1. užívateľ klikne na Twitter logo 
+
+        výsledok testovania: užívateľa presmerovalo na Twitter stránku 
+    
+    TC_004: presmerovanie na Youtube profil 
+        očakávany výsledok: užívateľa po kliknutí na Youtube logo presmeruje na Youtube sránku aboutyou
+
+        1. užívateľ klikne na Youtube logo 
+
+        výsledok testovania: užívateľa presmerovalo na Youtube stránku 
+
+    TC_005: presmerovanie na Pinterest profil 
+        očakávany výsledok: užívateľa po kliknutí na Pinterest logo presmeruje na Pinterest sránku aboutyou
+
+        1. užívateľ klikne na Pinterest logo 
+
+        výsledok testovania: užívateľa presmerovalo na Pinterest stránku 
+
+    TC_006: presmerovanie na TikTok profil 
+        očakávany výsledok: užívateľa po kliknutí na TikTok logo presmeruje na TikTok sránku aboutyou
+
+        1. užívateľ klikne na TikTok logo 
+
+        výsledok testovania: užívateľa presmerovalo na TikTok stránku 

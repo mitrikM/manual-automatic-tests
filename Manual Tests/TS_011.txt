@@ -1,0 +1,36 @@
+ID - TS_011
+Názov: vyhľadávanie všetkých značiek
+Popis: Otestovanie textového poľa 
+Preconditions: 
+    1. funkčné pripojenie k internetu
+    2. Google Chrome prehliadač
+    3. vstupno výstupne zariadenie na zadanie vstupu a získanie výstupu
+    4. užívateľ sa nachádza na stránke https://www.aboutyou.sk/znacka?category=20202#hladat-znacku
+
+        TC_001: vyhľadanie platnej značky
+            očakávaný výsledok: užívateľa presmeruje na stránku ktorá obsahuje výlučne produkty danej značky
+
+            kroky testovania:
+                1. užívateľ scrollne pokiaľ neuvidí textové pole hľadať značku
+                2. užívateľ zadá do textového pola "adidas" a potvrdí výber
+            
+            výsledok testovania: užívateľa presmeruje na stránku ktorá obsahuje výlučne produkty danej značky
+
+
+        TC_002: vyhľadanie neplatnej značky
+            očakávaný výsledok: užívateľa presmeruje na stránku ktorá ho oboznámi že zadal značku ktorá neexistuje 
+
+            kroky testovania:
+                1. užívateľ scrollne pokiaľ neuvidí textové pole hľadať značku
+                2. užívateľ zadá do textového pola "lsahjfd" a potvrdí výber
+            
+            výsledok testovania: užívateľa presmeruje na stránku ktorá ho oboznámi že zadal značku ktorá neexistuje
+
+        TC_003: vyhľadanie podľa začiatočného písmena
+            očakávaný výsledok: užívateľovi sa zobrazia značky podľa daného výberu písmena
+
+            kroky testovania:
+                1. užívateľ scrollne pokiaľ neuvidí textové pole hľadať značku
+                2. užívateľ klikne na tlačidlo B 
+
+            výsledok testovania: užívateľovi sa scrollol tak aby navrchu mal značky podľa písmena B

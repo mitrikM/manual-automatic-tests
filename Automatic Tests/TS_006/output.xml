@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.8.1 on win32)" generated="20220718 12:30:31.965" rpa="false" schemaversion="3">
+<suite id="s1" name="TS 006" source="C:\Users\marek\OneDrive\Počítač\MarekMitrik_www-aboutyou-sk_24-4-2022\Automatic Tests\TS_006\TS_006.robot">
+<test id="s1-t1" name="TC_001" line="36">
+<kw name="Otevri browser a stranku a zkontroluj">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220718 12:30:32.383" level="INFO">Opening browser 'Chrome' to base url 'https://www.aboutyou.sk/tvoj-obchod'.</msg>
+<status status="PASS" starttime="20220718 12:30:32.383" endtime="20220718 12:30:38.515"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220718 12:30:38.515" endtime="20220718 12:30:38.641"/>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20220718 12:30:38.645" level="INFO">Current location is 'https://www.aboutyou.sk/tvoj-obchod'.</msg>
+<status status="PASS" starttime="20220718 12:30:38.641" endtime="20220718 12:30:38.645"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//button[@id='onetrust-accept-btn-handler']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220718 12:30:38.645" endtime="20220718 12:30:38.676"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@id='onetrust-accept-btn-handler']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220718 12:30:38.676" level="INFO">Clicking element '//button[@id='onetrust-accept-btn-handler']'.</msg>
+<status status="PASS" starttime="20220718 12:30:38.676" endtime="20220718 12:30:38.835"/>
+</kw>
+<status status="PASS" starttime="20220718 12:30:32.382" endtime="20220718 12:30:38.835"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>xpath=//body</arg>
+<arg>\ue00f</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20220718 12:30:38.837" level="INFO">Sending key(s) ('\ue00f',) to xpath=//body element.</msg>
+<msg timestamp="20220718 12:30:39.151" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20220718 12:30:38.836" endtime="20220718 12:30:39.160"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>xpath=//body</arg>
+<arg>\ue00f</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20220718 12:30:39.161" level="INFO">Sending key(s) ('\ue00f',) to xpath=//body element.</msg>
+<msg timestamp="20220718 12:30:39.458" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20220718 12:30:39.161" endtime="20220718 12:30:39.495"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>xpath=//body</arg>
+<arg>\ue00f</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20220718 12:30:39.496" level="INFO">Sending key(s) ('\ue00f',) to xpath=//body element.</msg>
+<msg timestamp="20220718 12:30:39.873" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20220718 12:30:39.495" endtime="20220718 12:30:39.882"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>xpath=//body</arg>
+<arg>\ue00f</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20220718 12:30:39.884" level="INFO">Sending key(s) ('\ue00f',) to xpath=//body element.</msg>
+<msg timestamp="20220718 12:30:40.217" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20220718 12:30:39.883" endtime="20220718 12:30:40.222"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>xpath=//body</arg>
+<arg>\ue00f</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20220718 12:30:40.223" level="INFO">Sending key(s) ('\ue00f',) to xpath=//body element.</msg>
+<msg timestamp="20220718 12:30:40.498" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20220718 12:30:40.223" endtime="20220718 12:30:40.503"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//span[contains(text(),'Pomoc &amp; kontakt')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220718 12:30:40.504" level="INFO">Clicking element 'xpath=//span[contains(text(),'Pomoc &amp; kontakt')]'.</msg>
+<status status="PASS" starttime="20220718 12:30:40.504" endtime="20220718 12:30:40.588"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>new</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20220718 12:30:40.588" endtime="20220718 12:30:40.596"/>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>https://www.aboutyou.sk/h</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20220718 12:30:42.781" level="INFO">Current location is 'https://www.aboutyou.sk/h'.</msg>
+<status status="PASS" starttime="20220718 12:30:40.597" endtime="20220718 12:30:42.781"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220718 12:30:43.139" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220718 12:30:42.782" endtime="20220718 12:30:43.139"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220718 12:30:43.141" endtime="20220718 12:30:45.465"/>
+</kw>
+<status status="PASS" starttime="20220718 12:30:32.381" endtime="20220718 12:30:45.466"/>
+</test>
+<test id="s1-t2" name="TC_002" line="49">
+<kw name="Otevri browser a stranku a zkontroluj">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220718 12:30:45.470" level="INFO">Opening browser 'Chrome' to base url 'https://www.aboutyou.sk/tvoj-obchod'.</msg>
+<status status="PASS" starttime="20220718 12:30:45.470" endtime="20220718 12:30:50.953"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220718 12:30:50.953" endtime="20220718 12:30:51.077"/>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20220718 12:30:51.082" level="INFO">Current location is 'https://www.aboutyou.sk/tvoj-obchod'.</msg>
+<status status="PASS" starttime="20220718 12:30:51.077" endtime="20220718 12:30:51.082"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//button[@id='onetrust-accept-btn-handler']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220718 12:30:51.082" endtime="20220718 12:30:51.141"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@id='onetrust-accept-btn-handler']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220718 12:30:51.141" level="INFO">Clicking element '//button[@id='onetrust-accept-btn-handler']'.</msg>
+<status status="PASS" starttime="20220718 12:30:51.141" endtime="20220718 12:30:51.298"/>
+</kw>
+<status status="PASS" starttime="20220718 12:30:45.469" endtime="20220718 12:30:51.299"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>xpath=//body</arg>
+<arg>\ue00f</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20220718 12:30:51.300" level="INFO">Sending key(s) ('\ue00f',) to xpath=//body element.</msg>
+<msg timestamp="20220718 12:30:51.613" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20220718 12:30:51.299" endtime="20220718 12:30:51.619"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>xpath=//body</arg>
+<arg>\ue00f</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20220718 12:30:51.620" level="INFO">Sending key(s) ('\ue00f',) to xpath=//body element.</msg>
+<msg timestamp="20220718 12:30:51.895" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20220718 12:30:51.619" endtime="20220718 12:30:51.917"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>xpath=//body</arg>
+<arg>\ue00f</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20220718 12:30:51.918" level="INFO">Sending key(s) ('\ue00f',) to xpath=//body element.</msg>
+<msg timestamp="20220718 12:30:52.284" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20220718 12:30:51.917" endtime="20220718 12:30:52.288"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>xpath=//body</arg>
+<arg>\ue00f</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20220718 12:30:52.289" level="INFO">Sending key(s) ('\ue00f',) to xpath=//body element.</msg>
+<msg timestamp="20220718 12:30:52.568" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20220718 12:30:52.289" endtime="20220718 12:30:52.574"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>xpath=//body</arg>
+<arg>\ue00f</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20220718 12:30:52.575" level="INFO">Sending key(s) ('\ue00f',) to xpath=//body element.</msg>
+<msg timestamp="20220718 12:30:52.849" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20220718 12:30:52.575" endtime="20220718 12:30:52.855"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//span[contains(text(),'Partnerský program')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220718 12:30:52.856" level="INFO">Clicking element 'xpath=//span[contains(text(),'Partnerský program')]'.</msg>
+<status status="PASS" starttime="20220718 12:30:52.856" endtime="20220718 12:30:52.941"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>new</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20220718 12:30:52.942" endtime="20220718 12:30:52.950"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220718 12:30:57.964" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220718 12:30:52.950" endtime="20220718 12:30:57.964"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath://body/div[@id='whole-page']/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/a[1]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20220718 12:30:57.987" level="INFO">Current page contains element 'xpath://body/div[@id='whole-page']/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/a[1]'.</msg>
+<status status="PASS" starttime="20220718 12:30:57.965" endtime="20220718 12:30:57.987"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220718 12:30:58.134" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220718 12:30:57.988" endtime="20220718 12:30:58.134"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220718 12:30:58.135" endtime="20220718 12:31:00.661"/>
+</kw>
+<status status="PASS" starttime="20220718 12:30:45.468" endtime="20220718 12:31:00.662"/>
+</test>
+<test id="s1-t3" name="TC_003" line="63">
+<kw name="Otevri browser a stranku a zkontroluj">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220718 12:31:00.666" level="INFO">Opening browser 'Chrome' to base url 'https://www.aboutyou.sk/tvoj-obchod'.</msg>
+<status status="PASS" starttime="20220718 12:31:00.665" endtime="20220718 12:31:07.191"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220718 12:31:07.192" endtime="20220718 12:31:07.478"/>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20220718 12:31:07.569" level="INFO">Current location is 'https://www.aboutyou.sk/tvoj-obchod'.</msg>
+<status status="PASS" starttime="20220718 12:31:07.478" endtime="20220718 12:31:07.569"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//button[@id='onetrust-accept-btn-handler']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220718 12:31:07.570" endtime="20220718 12:31:07.712"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@id='onetrust-accept-btn-handler']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220718 12:31:07.712" level="INFO">Clicking element '//button[@id='onetrust-accept-btn-handler']'.</msg>
+<status status="PASS" starttime="20220718 12:31:07.712" endtime="20220718 12:31:08.030"/>
+</kw>
+<status status="PASS" starttime="20220718 12:31:00.665" endtime="20220718 12:31:08.030"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>xpath=//body</arg>
+<arg>\ue00f</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20220718 12:31:08.032" level="INFO">Sending key(s) ('\ue00f',) to xpath=//body element.</msg>
+<msg timestamp="20220718 12:31:08.455" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20220718 12:31:08.031" endtime="20220718 12:31:08.460"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>xpath=//body</arg>
+<arg>\ue00f</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20220718 12:31:08.461" level="INFO">Sending key(s) ('\ue00f',) to xpath=//body element.</msg>
+<msg timestamp="20220718 12:31:08.805" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20220718 12:31:08.461" endtime="20220718 12:31:08.873"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>xpath=//body</arg>
+<arg>\ue00f</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20220718 12:31:08.875" level="INFO">Sending key(s) ('\ue00f',) to xpath=//body element.</msg>
+<msg timestamp="20220718 12:31:09.299" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20220718 12:31:08.874" endtime="20220718 12:31:09.305"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>xpath=//body</arg>
+<arg>\ue00f</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20220718 12:31:09.306" level="INFO">Sending key(s) ('\ue00f',) to xpath=//body element.</msg>
+<msg timestamp="20220718 12:31:09.579" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20220718 12:31:09.305" endtime="20220718 12:31:09.585"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>xpath=//body</arg>
+<arg>\ue00f</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20220718 12:31:09.587" level="INFO">Sending key(s) ('\ue00f',) to xpath=//body element.</msg>
+<msg timestamp="20220718 12:31:09.863" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20220718 12:31:09.586" endtime="20220718 12:31:09.868"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//span[contains(text(),'Oblasť doručenia')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220718 12:31:09.869" level="INFO">Clicking element 'xpath=//span[contains(text(),'Oblasť doručenia')]'.</msg>
+<status status="PASS" starttime="20220718 12:31:09.869" endtime="20220718 12:31:09.950"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>new</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20220718 12:31:09.951" endtime="20220718 12:31:09.959"/>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>https://www.aboutyou.sk/vseobecne-obchodne-podmienky</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20220718 12:31:12.072" level="INFO">Current location is 'https://www.aboutyou.sk/vseobecne-obchodne-podmienky'.</msg>
+<status status="PASS" starttime="20220718 12:31:09.959" endtime="20220718 12:31:12.072"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220718 12:31:12.363" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220718 12:31:12.074" endtime="20220718 12:31:12.363"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220718 12:31:12.365" endtime="20220718 12:31:14.606"/>
+</kw>
+<status status="PASS" starttime="20220718 12:31:00.664" endtime="20220718 12:31:14.608"/>
+</test>
+<test id="s1-t4" name="TC_004" line="76">
+<kw name="Otevri browser a stranku a zkontroluj">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220718 12:31:14.618" level="INFO">Opening browser 'Chrome' to base url 'https://www.aboutyou.sk/tvoj-obchod'.</msg>
+<status status="PASS" starttime="20220718 12:31:14.617" endtime="20220718 12:31:20.675"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220718 12:31:20.675" endtime="20220718 12:31:20.806"/>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20220718 12:31:20.811" level="INFO">Current location is 'https://www.aboutyou.sk/tvoj-obchod'.</msg>
+<status status="PASS" starttime="20220718 12:31:20.807" endtime="20220718 12:31:20.811"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//button[@id='onetrust-accept-btn-handler']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220718 12:31:20.811" endtime="20220718 12:31:20.837"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@id='onetrust-accept-btn-handler']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220718 12:31:20.838" level="INFO">Clicking element '//button[@id='onetrust-accept-btn-handler']'.</msg>
+<status status="PASS" starttime="20220718 12:31:20.837" endtime="20220718 12:31:20.995"/>
+</kw>
+<status status="PASS" starttime="20220718 12:31:14.616" endtime="20220718 12:31:20.996"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>xpath=//body</arg>
+<arg>\ue00f</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20220718 12:31:20.998" level="INFO">Sending key(s) ('\ue00f',) to xpath=//body element.</msg>
+<msg timestamp="20220718 12:31:21.313" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20220718 12:31:20.997" endtime="20220718 12:31:21.318"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>xpath=//body</arg>
+<arg>\ue00f</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20220718 12:31:21.319" level="INFO">Sending key(s) ('\ue00f',) to xpath=//body element.</msg>
+<msg timestamp="20220718 12:31:21.641" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20220718 12:31:21.319" endtime="20220718 12:31:21.696"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>xpath=//body</arg>
+<arg>\ue00f</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20220718 12:31:21.697" level="INFO">Sending key(s) ('\ue00f',) to xpath=//body element.</msg>
+<msg timestamp="20220718 12:31:22.035" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20220718 12:31:21.697" endtime="20220718 12:31:22.041"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>xpath=//body</arg>
+<arg>\ue00f</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20220718 12:31:22.042" level="INFO">Sending key(s) ('\ue00f',) to xpath=//body element.</msg>
+<msg timestamp="20220718 12:31:22.317" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20220718 12:31:22.042" endtime="20220718 12:31:22.324"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>xpath=//body</arg>
+<arg>\ue00f</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20220718 12:31:22.325" level="INFO">Sending key(s) ('\ue00f',) to xpath=//body element.</msg>
+<msg timestamp="20220718 12:31:22.595" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20220718 12:31:22.325" endtime="20220718 12:31:22.601"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//span[contains(text(),'Tvoje dáta sú u nás v bezpečí')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220718 12:31:22.602" level="INFO">Clicking element 'xpath=//span[contains(text(),'Tvoje dáta sú u nás v bezpečí')]'.</msg>
+<status status="PASS" starttime="20220718 12:31:22.601" endtime="20220718 12:31:22.684"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>new</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20220718 12:31:22.685" endtime="20220718 12:31:22.693"/>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>https://www.rapidssl.com/</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20220718 12:31:28.389" level="INFO">Current location is 'https://www.rapidssl.com/'.</msg>
+<status status="PASS" starttime="20220718 12:31:22.693" endtime="20220718 12:31:28.389"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220718 12:31:28.543" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220718 12:31:28.390" endtime="20220718 12:31:28.543"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220718 12:31:28.543" endtime="20220718 12:31:30.733"/>
+</kw>
+<status status="PASS" starttime="20220718 12:31:14.613" endtime="20220718 12:31:30.735"/>
+</test>
+<status status="PASS" starttime="20220718 12:30:31.967" endtime="20220718 12:31:30.742"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="TS 006">TS 006</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

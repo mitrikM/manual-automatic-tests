@@ -1,0 +1,58 @@
+ID - TS_007
+Názov: Testovanie vyhľadávania produktov
+Popis: otestovanie funkcionality vyhľadacieho okna na stránke www.aboutyou.sk 
+Preconditions: 
+    1. funkčné pripojenie k internetu
+    2. Google Chrome prehliadač
+    3. vstupno výstupne zariadenie na zadanie vstupu a získanie výstupu
+    4. nachádzať sa na stránke www.aboutyou.sk
+
+    TC_001: neexistujúci produkt
+        očakávany výstup: po vyhľadaní neexistujúceho produktu sa zobrazí hláška že daný produkt sa nenašiel
+        
+        kroky testovania:
+            1. užívateľ klikne na lupu
+            2. užívateľ zadá "psoaddhufiiuh" do vyhľadávacieho pola
+            3. užívateľ zmačkne "ENTER"
+
+        výsledok testovania: po vyhľadaní neexistujúceho produktu sa zobrazí hláška "Bohužiaľ, nenašli sme žiadne výsledky pre "psoaddhufiiuh".
+
+    TC_002: automatická ponuka na základe zadaného textu
+        očakávany výstup: po zadaní určitého textu sa na výber zobrazia produkty/kategórie ktoré sú relatívne k danému obsahu vo vyhľadávaciom pohlavia
+
+        kroky testovania:
+            1. užívateľ klikne na lupu
+            2. užívateľ zadá "tri" do vyhľadávacieho pola
+
+        výsledok testovania: užívateľovi sa zobrazia relevantné značky, kategórie, produkty na základe zadaného slova
+
+    TC_003: presmerovanie na danú voľbu
+
+        očakávany výstup: po výbere voľby vo vyhľadávaciom poli užívateľa presmeruje na danú stránkuň
+
+        kroky testovania:
+            1. užívateľ klikne na lupu
+            2. užívateľ zadá "tričko" do vyhľadávacieho poľa
+            3. užívateľ klikne na kategóriu "tričká"
+            
+        výsledok testovania: užívateľa presmeruje na stránku s katégoriou tričká
+
+    TC_004: nedávne vyhľadávania
+        očakávany výstup: po kliknutí na vyhľadávanie sa zobrazí okno s nedávnymi vyhľadávaniami   
+
+        kroky testovania:
+            1. užívateľ klikne na lupu
+        
+        výsledok testovania: po kliknutí na vyhľadávanie sa zobrazí okno s nedávnymi vyhľadávaniami 
+    
+    TC_005: odstránenie celého reťazca z vyhľadávania
+        očakávany výstup: po kliknutí na krížik sa vymaže zadaný textový reťazec
+
+        kroky testovania:
+            1. užívateľ klikne na lupu
+            2. užívateľ zadá "ôasldfjkhgnblyksjdfghb" do vyhladávacieho pola
+            3. užívateľ klikne na krížik
+
+        výsledok testovania: po kliknutí na krížik sa vymaže zadaný textový reťazec
+
+    

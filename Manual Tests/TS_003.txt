@@ -1,0 +1,71 @@
+ID - TS_003
+Názov: Testovanie domovskej obrazovky
+Popis: Otestovanie funkcionality tlačidiel, vyskakovacích okien, dropdown menus, 
+Preconditions: 
+    1. funkčné pripojenie k internetu
+    2. Google Chrome prehliadač
+    3. vstupno výstupne zariadenie na zadanie vstupu a získanie výstupu
+    4. užívateľ je prihlásený vo svojom profile na stránke aboutyou.sk
+
+    TC_001: funčnosť tlačidla pre návrat na domovskú stránku
+    
+        Očakávaný výsledok: po stlačení tlačidla aboutyou alebo about+nickname (záleží či je človek prihlásený) strede na hornej lište sa užívateľ vráti na domovskú stránku aboutyou.sk
+
+        kroky testovania:  
+            1. užívateľ sa nachádza na akejkoľvek podstránke s názvom www.aboutyou.sk/xxxx
+            2. užívateľ klikne na tlačidlo aboutyou alebo about+nickname ktoré sa nachádza na začiatku okna v strede
+
+        výsledok testovania: užívateľ sa vrátil na domovskú stránku www.aboutyou.sk 
+
+    TC_002: verifikácia funkčnosti drop down menu na hlavnej lište
+
+        očakávaný výsledok: potom ako užívateľ prejde kurzorom na prvok v dropdown menu objaví sa mu obsah daného prvku
+        
+        kroky testovania:
+            1. užívateľ sa nachádza na stránke www.aboutyou.sk
+            2. užívateľ presunie svoj kurzor na miesto kde sa nachádza nejaký prvok z dropdown menu na hlavnej lište 
+        výsledok testovania: užívateľovi sa zobrazí obsah z daného prvku 
+
+
+    TC_003: verifikácia funkčnosti presmerovania po kliknutí na obrázok outfitu
+        očakávaný výsledok: po kliknutí na obrázok outfitu užívateľa presmeruje na stránku kde sa mu daný outfit zobrazí a môže si kúpiť jednotlivé produkty z daného outfitu
+                             alebo ich alternatívý 
+        
+        kroky testovania:
+            1. užívateľ sa nachádza na domovskej stránke aboutyou.sk
+            2. užívateľ klikne na ľubovoľný obrázok ktorý obsahuje daný outfit na predaj
+        
+        výsledok testovania: užívateľa presmeruje na stránku kde si môže daný outfit kúpiť alebo mu budú ponúknuté alternátivne produkty k zakúpeniu
+
+    TC_004: verifikácia funčnosti výberu krajiny obchodu na hlavnej lište 
+        očakávaný výsledok: po vybratí krajiny užívateľa presmeruje na eshop danej krajiny
+
+        kroky testovania:
+            1. užívateľ sa náchadza na stránke aboutyou.sk
+            2. užívateľ prejde kurzorom na drop down menu ktoré sa nachádza v pravom hornom rohu s vlajkou.
+            3. keď sa zobrazí obsah menu klikne na aktuálny obchod
+            4. vyberie si ľubovoľnú krajinu a klikne na ňu
+
+        výsledok testovania: užívateľa presmeruje na eshop danej krajiny
+
+    TC_005: verifikácia funkčnosti textového poľa na vyhľádavanie produktu 
+        očakávaný výsledok: po zadaní názvu produktu sa nájdu relevantné výsledky (po zadaní bunda nám vyhľadá ponuku búnd)
+        
+        kroky testovania:
+            1. užívateľ sa nachádza na stránke aboutyou.sk
+            2. užívateľ klikne na lupu v pravom hornom rohu  
+            3. užívateľ zadá názov ľubovolného produktu
+        
+        výsledok testovania: užívateľovi sa zobrazia relevantné výsledky na základe hladaného produktu
+
+    TC_006: verifikácia tlačidiel v kategórii "Tvoje top kategórie"
+        očakávaný výsledok: užívateľovi sa po kliknutí na jendu z kategórii, ktoré mu boli odporučané, načíta stránka, ktorá ponúka dané produkty
+
+        kroky testovania:
+            1. užívateľ sa nachádza na domovskej stránke www.aboutyou.sk
+            2. užívateľ nájde rubriku "Tvoje top kategórie"
+            3. užívateľ klikne na jednu z ponúkaných kategórii
+
+        výsledok testovania: užívateľa presmeruje na stránku ktorá ponúka dané produkty z danej kategórie na ktorú užívateľ klikol
+
+    

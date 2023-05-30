@@ -1,0 +1,112 @@
+ID - TS_001
+Názov: Testovanie loginu a registrácie
+Popis: Otestovanie funkcionality a bundries
+Preconditions: 
+    1. funkčné pripojenie k internetu
+    2. Google Chrome prehliadač
+    3. vstupno výstupne zariadenie na zadanie vstupu a získanie výstupu
+
+TC_001: verifikácia či sa užívateľ môže prihlásiť do svojho profilu pri zadaní správných prihlasovacích údajov
+    očakávaný výsledok: užívateľ sa úspešne prihlási do svojho profilu
+    
+    kroky testovania:
+        1. užívateľ je na stránke "www.aboutyou.sk"
+        2. užívateľ klikne na panáčika v pravom hornom rohu
+        3. zobrazí sa mu vyskakovacie okno s registračným formulárom
+        4. klikne prihlásiť sa 
+        5. zadá prihlasovacie údaje
+        6. klikne prihlásiť sa
+    
+    výsledok testovania: užívateľ sa úspešne prihlásil
+
+TC_002: verifikácia funkčnosti tlačidla zabudnuté heslo
+    očakávaný výsledok: užívateľ dostane email na obnovenie svojho hesla
+
+    kroky testovania:
+        1. užívateľ sa nachádza na stránke "www.aboutyout.sk"
+        2. užívateľ klikne na panáčika v pravom hornom rohu
+        3. zobrazí sa mu vyskakovacie okno s registračným formulárom
+        4. klikne prihlásiť sa
+        5. klikne na tlačidlo zabudnúte heslo
+        6. zobrazí sa mu formúlar kde zadá svoju emailovú adresu
+        7. klikne na obnoviť heslo
+    
+    výsledok testovania: užívateľ dostane email s linkom na obnovenie emailu
+
+TC_003: verifikácia funkčnosti klávesy ENTER v prihlasovaciom formuláry
+    očakávaný výsledok: užívateľa úspešne prihlási do svojho profilu
+
+    kroky testovania:
+        1. užívateľ je na stránke "www.aboutyou.sk"
+        2. užívateľ klikne na panáčika v pravom hornom rohu
+        3. zobrazí sa mu vyskakovacie okno s registračným formulárom
+        4. klikne prihlásiť sa 
+        5. zadá prihlasovacie údaje
+        6. zmačkne klávesu ENTER
+    
+    výsledok testovania: užívateľ sa úspešne prihlási do svojho profilu
+
+TC_004: verifikácia bezpečnosti pri registrácii - zadanie príliš jednoduchého hesla
+    očkávaný výsledok: užívateľ sa nebude môcť registrovať pomocou hesla "123456"
+
+    kroky testovania:
+        1. užívateľ je na stránke "www.aboutyou.sk"
+        2. užívateľ klikne na panáčika v pravom hornom rohu
+        3. zobrazí sa mu vyskakovacie okno s registračným formulárom 
+        4. zadá meno, priezvisko, emailovú adresu a heslo "123456"
+        5. klikne na tlačidlo Zaregistrovať sa
+    
+    výsledok testovania: užívateľ sa zaregistroval s jednoduchým heslom
+
+TC_005: verifikácia hraníc pri dĺžke hesla od 6-20 znakov
+    očakávaný výsledok: užívateľ nebude môcť použíť heslo, ktoré obsahuje menej znakov ako 6 a viac znakov ako 20
+
+
+    kroky testovania:
+        1. užívateľ sa nachádza na stránke "www.aboutyou.sk" a má otvorený registračný formulár
+        2. užívateľ vyplní registračný formulár a zada heslo o dĺžke menších ako 6 a väčších ako 20
+        3. užívateľ potvrdí registráciu pomocou zmačknutia tlačidla Zaregistrovať sa
+
+    výsledok testovania: užívateľa nezaregistruje a dostane upozornenie v ktorom stojí "heslo musí mať 6 až 20 znakov"
+
+    TC_006: zadanie nevalidného emailu
+        očakávaný výsledok: stránka zobrazí hlášku ktorá oboznámi užívateľa že zadal neplatný email
+
+        kroky testovania:
+            1. užívateľ sa nachádza na stránke "www.aboutyou.sk" a má otvorený prihlasovací formulár
+            2. užívateľ zadá neplatný email "asdf"
+            3. uzívateľ zmačkne tlačidlo príhlasiť sa 
+
+        výsledok testovania: stránka zobrazí hlášku ktorá oboznámi užívateľa že zadal neplatný email
+
+    TC_007: zadanie nesprávnych prihlasovacích údajov
+        očakávaný výsledok: užívateľa neprihlási na stránku a objavý sa mu chybová hláška
+
+        kroky testovania:
+            1. užívateľ sa nachádza na stránke "www.aboutyou.sk" a má otvorený prihlasovací formulár
+            2. užívateľ zadá nesprávny email a heslo
+            3. uzívateľ zmačkne tlačidlo príhlasiť sa 
+
+        výsledok testovania: užívateľa neprihlási na stránku a objavý sa mu chybová hláška "Tvoja e-mailová adresa alebo heslo neboli správne. Skús to, prosím, ešte raz."
+
+    TC_008: zadanie nesprávneho hesla a správny email
+        
+        očakávaný výsledok: užívateľa neprihlási na stránku a objavý sa mu chybová hláška
+
+        kroky testovania: 
+            1. užívateľ sa nachádza na stránke "www.aboutyou.sk" a má otvorený prihlasovací formulár
+            2. užívateľ zadá správny email a nesprávne heslo
+            3. uzívateľ zmačkne tlačidlo príhlasiť sa 
+
+        výsledok testovania:  výsledok testovania: užívateľa neprihlási na stránku a objavý sa mu chybová hláška "Tvoja e-mailová adresa alebo heslo neboli správne. Skús to, prosím, ešte raz."
+
+
+    TC_009: zadanie správneho hesla a nesprávneho emailu
+        očakávaný výsledok: užívateľa neprihlási na stránku a objavý sa mu chybová hláška
+
+        kroky testovania: 
+            1. užívateľ sa nachádza na stránke "www.aboutyou.sk" a má otvorený prihlasovací formulár
+            2. užívateľ zadá nesprávny email a správne heslo
+            3. uzívateľ zmačkne tlačidlo príhlasiť sa 
+
+        výsledok testovania:  výsledok testovania: užívateľa neprihlási na stránku a objavý sa mu chybová hláška "Tvoja e-mailová adresa alebo heslo neboli správne. Skús to, prosím, ešte raz."

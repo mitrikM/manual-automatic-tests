@@ -1,0 +1,32 @@
+ID - TS_010
+Názov: výber pohlavia
+Popis: otestovanie funkcionality výberu pohlavia na domovskej obrazovke
+Preconditions: 
+    1. funkčné pripojenie k internetu
+    2. Google Chrome prehliadač
+    3. vstupno výstupne zariadenie na zadanie vstupu a získanie výstupu
+    4. nachádzať sa na začiatku stránky www.aboutyou.sk 
+
+    TC_001: výber kategórie ženy
+        očakávaný výstup: užívateľovi sa zobrazia produkty výhradne pre ženy
+
+        kroky testovania:
+            1. užívateľ nájde a klikne na tlačidlo ženy
+
+        výsledok testovania: užívateľovi sa zobrazia produkty výhradne pre ženy
+
+    TC_002: výber kategórie muži 
+        očakávaný výstup: užívateľovi sa zobrazia produkty výhradne pre mužov
+
+        kroky testovania:
+            1. užívateľ nájde a klikne na tlačidlo muži
+        
+        výsledok testovania: užívateľovi sa zobrazia produkty výhradne pre mužov
+
+    TC_003: výber kategórie deti 
+        očakávaný výstup: užívateľovi sa zobrazia produkty výhradne pre deti
+
+        kroky testovania:
+            1. užívateľ nájde a klikne na tlačidlo deti 
+
+        výsledok testovania: užívateľovi sa zobrazia produkty výhradne pre deti

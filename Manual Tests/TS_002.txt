@@ -1,0 +1,91 @@
+ID - TS_002
+Názov: Testovanie nákupného košíku
+Popis: Otestovanie funkcionality 
+Preconditions: 
+    1. funkčné pripojenie k internetu
+    2. Google Chrome prehliadač
+    3. vstupno výstupne zariadenie na zadanie vstupu a získanie výstupu
+
+TC_001: Verifikácia funkčnosti tlačidla vložiť do košíka 
+    Očakávaný výsledok: po stlačení tlačidla vložiť do košíka sa vybraný produkt vloží do košíka a aktualizuje sa jeho obsah
+
+    Kroky Testovania:
+        1. užívateľ sa náchadza na stránke https://www.aboutyou.sk/p/jack-jones/boxerky-oliver-4373414
+        2. zákazník si vyberie dostupnú farbu/veľkosť 
+        3. klikne na pridať do košíka
+    
+    Výsledok testovania: po stlačení tlačidla vložiť do košíka sa vybraný produkt zobrazil v košíku a košík sa aktualizoval 
+
+TC_002: Verifikácia či sa košík aktualizuje/vyprázdni potom ako sa používateľ odhlási zo svojho účtu
+    očakávaný výsledok: potom ako sa používateľ odhlási košík aktualizuje svoj obsah resp. sa vyprázdni
+
+    Kroky Testovania:
+        1. užívateľ je prihlásený na stránke "www.aboutyou.sk"
+        2. užívateľ nemá prázdny košík
+        3. užívateľ sa odhlási 
+    výsledok testovania: košík sa po odhláseni vyprázdnil
+
+TC_003: Verifikácia či sa akutalizije košík po prihlásení
+    Očakávaný výsledok: po prihlásení sa košík aktualizuje resp. ak opsahoval pred odhlásením produkty, tie budú v košíku aj po prihlásení
+
+    Kroky testovania:
+        1. užívateľ nie je prihlásený na stránke "www.aboutyou.sk"
+        2. užívateľ sa prihlási do svojho profilu
+    
+    výsledok testovania: po prihlásení sa aktualizoval košík do stavu v ktorom bol pred tým ako sa užívateľ odhlásil
+
+TC_004: Verifikácia či sa produkt odstráni z košíka
+    očakávaný výsledok testovania: užívateľ je schopný odstraniť produkt z košíka
+    kroky testovania:
+        1. užívateľ sa náchadza vo svojom košíku
+        2. užívateľ klikne na tlačidlo "vymazať"
+
+    výsledok testovania: z košíku sa vymaže daný produkt a košík sa aktualizuje
+
+TC_005: Verifikácia či sa produkt pridá do košíka ak nevyberieme veľkosť produktu
+    očakávaný výsledok: do košíka sa nepridá produkt ktorý nemá vybratú veľkosť
+    kroky testovania:
+        1. užívateľ sa nachádza na stránke "https://www.aboutyou.sk/p/champion-authentic-athletic-apparel/nizke-tenisky-7400350"
+        2. užívateľ klikne na tlačidlo pridať do košíku
+    
+    výsledok testovania: užívateľovi sa otvorí okno na výber veľkosti.
+
+TC_006: Verifikácia či sa ceľková cena v košíku aktualizuje ak zvýšime počet kusov produktu ktorý chceme kúpiť
+    očakávaný výsledok: po zvýšení počtu kusov sa cena automaticky aktualizuje o čiastku daného produktu
+
+    kroky testovania:
+        1. užívateľ sa nachádza vo svojom košíku v ktorom má produkt
+        2. užívateľ klikne na tlačidlo s počtom produktu 
+        3. užívateľovi sa objaví okno v ktorom si môže zvýšiť počet kusov produktu
+        4. užívateľ klikne na tlačidlo 2
+
+    výsledok testovania: po zvýšení počtu kusov na 2 sa cena za produkt zvýší o cenu daného produktu 
+
+TC_007: pokus o pridanie produktu ktorý už je v košíku
+    očakávaný výsledok: užívateľ nie je schopný pridať produkt do košíku a dostane chybovú hlášku
+
+    kroky testovania: 
+        1. užívateľ sa nachádza vo svojom košíku v ktorom má produkt
+        2. užívateľ klikne na produkt 
+        3. užívateľ sa nachádza na stránke produkt
+        4. užívateľ vyberie rovnakú veľkosť ktorú ma v košíku
+        5. užívateľ klikne na tlačidlo už v košíku
+
+    výsledok testovania: po kliknutí sa aktualizuje počet kusov v košíku zvýši sa o 1
+
+TC_008: presmerovanie pri stlačení tlačidla "objednať s povinnosťou platby"
+    očakávaný výsledok: užívateľa presmeruje na stránku s platbou
+
+    kroky testovania:
+        1. užívateľ je prihlásený a nachádza sa v košíku v ktorom má produkt
+        2. užívateľ klikne na tlačidlo "objednať s povinnosťou platby"
+
+    výsledok testovania: užívateľa presmeruje na stránku "https://checkout.aboutyou.sk/order/data/address-information?options=eyJiYXNrZXRJZCI6ImFib3V0eW91X2N1c3RvbWVyXzU1NDkwODgyIiwicGxhdGZvcm1BcHBJZCI6NTg2fQo%25253D.MGE1MmY1Nzc2YmU4YjFlNzFiZDQwYTJlYmI0NzY1OTg2ZDYwODMzYThiZDhjOTRhNDRjZjIxZGEyZmE1ZmU0ZA%25253D%25253D"
+
+TC_009: presmerovanie stránku produktu po kliknutí na produkt
+    očakávaný výsledok: užívateľa presmeruje na stránku produktu
+
+    kroky testovania: 
+        1. užívateľ je prihlásený a nachádza sa v košíku v ktorom má produkt
+        2 užívateľ klikne na produkt
+    výsledok testovania: užívateľa presmeruje na stránku produktu

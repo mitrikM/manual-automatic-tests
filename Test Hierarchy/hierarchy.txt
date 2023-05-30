@@ -1,0 +1,83 @@
+TS_001: Testovanie loginu a registrácie
+    TC_001: verifikácia či sa užívateľ môže prihlásiť do svojho profilu pri zadaní správných prihlasovacích údajov
+    TC_002: verifikácia funkčnosti tlačidla zabudnuté heslo
+    TC_003: verifikácia funkčnosti klávesy ENTER v prihlasovaciom formuláry
+    TC_004: verifikácia bezpečnosti pri registrácii - zadanie príliš jednoduchého hesla
+    TC_005: verifikácia hraníc pri dĺžke hesla od 6-20 znakov
+    TC_006: zadanie nevalidného emailu
+    TC_007: zadanie nesprávnych prihlasovích údajov
+    TC_008: zadanie nesprávneho hesla a správneho emailu
+    TC_009: zadanie správneho hesla a nesprávneho emailu
+
+TS_002: Testovanie nákupného košíku
+    TC_001: Verifikácia funkčnosti tlačidla vložiť do košíka 
+    TC_002: Verifikácia či sa košík aktualizuje/vyprázdni potom ako sa používateľ odhlási zo svojho účtu
+    TC_003: Verifikácia či sa akutalizije košík po prihlásení
+    TC_004: Verifikácia či sa produkt odstráni z košíka
+    TC_005: Verifikácia či sa produkt pridá do košíka ak nevyberieme veľkosť produktu
+    TC_006: Verifikácia či sa ceľková cena v košíku aktualizuje ak zvýšime počet kusov produktu ktorý chceme kúpiť
+    TC_007: pokus o pridanie produktu ktorý už je v košíku
+    TC_008: presmerovanie pri stlačení tlačidla "objednať s povinnosťou platby"
+    TC_009: presmerovanie stránku produktu po kliknutí na produkt
+
+TS_003: Testovanie domovskej obrazovky
+    TC_001: funčnosť tlačidla pre návrat na domovskú stránku
+    TC_002: verifikácia funkčnosti drop down menu na hlavnej lište
+    TC_003: verifikácia funkčnosti presmerovania po kliknutí na obrázok outfitu
+    TC_004: verifikácia funčnosti výberu krajiny obchodu na hlavnej lište 
+    TC_005: verifikácia tlačidiel v kategórii "Tvoje top kategórie"
+    TC_006: verifikácia tlačidiel v kategórii "Tvoje top kategórie"
+
+TS_004: Testovanie filtrovania, triedenia, zobrazenia produktov v kategórii tričká
+    TC_001: verifikácia funkčnosti filtrácie na základe veľkosti
+    TC_002: verifikácia funkčnosti filtrácie na základe farby
+    TC_003: verifikácia funkčnosti filtrácie na základe značky
+    TC_004: verifikácia funkčnosti filtrácie na základe ceny
+    TC_005: verifikácia funkčnosti filtrácie na základe výpredaju
+    TC_006: verifikácia funkčnosti resetovania filtrácie
+    TC_007: verifikácia funkčnosti triedenia na základe najnižšej ceny
+    TC_008: verifikácia funkčnosti zobrazenia produktov
+
+TS_005: Otestovanie Zoznam priani 
+    TC_001: verifikácia funkčnosti pridania produktu do svojho zoznamu priani
+    TC_002: verifikácia funkčnosti zobrazenia zoznamu priani
+    TC_003: verifikácia funkčnosti odstránenia produktu zo zoznamu priani
+
+TS_006: otestovanie funkčnosti tlačidiel zákaznického servisu 
+    TC_001: verifikácia funkčnosti tlačidla "Kontakt"
+    TC_002: verifikácia funkčnosti tlačidla "Pomoc"
+    TC_003: verifikácia funkčnosti tlačidla "Partnerský program"
+    TC_004: verifikácia funkčnosti tlačidla "Oblasť doručenia"
+
+TS_007: Testovanie vyhľadávania produktov:
+    TC_001: neexistujúci produkt
+    TC_002: automatická ponuka na základe zadaného textu
+    TC_003: presmerovanie na danú voľbu
+    TC_004: nedávne vyhľadávania
+    TC_005: odstránenie celého reťazca z vyhľadávania
+
+TS_008: Testovanie presmerovania na sociálne siete
+    TC_001: presmerovanie na Facebook profil 
+    TC_002: presmerovanie na Instagram profil
+    TC_003: presmerovanie na Twitter profil
+    TC_004: presmerovanie na Youtube profil
+    TC_005: presmerovanie na Pinterest profil
+    TC_006: presmerovanie na TikTok profil
+
+TS_009: Testovanie výberu z hlavného menu
+    TC_001: presmerovanie na danú kategóriu
+    TC_002: presmerovanie na danú podkatégoriu danej kategórie
+    TC_003: presmerovanie na top značku danej kategórie
+    TC_004: presmerovanie na  rozsirenú kategóriu po výbere danej podkatégorie
+
+TS_010: výber pohlavia
+    TC_001: výber kategórie ženy
+    TC_002: výber kategórie muži
+    TC_003: výber kategórie deti
+
+TS_011: vyhľadávanie všetkých značiek
+    TC_001: vyhľadanie platnej značky
+    TC_002: vyhľadanie neplatnej značky
+    TC_003: vyhľadanie podľa začiatočného písmena
+
+ 

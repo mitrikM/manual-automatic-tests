@@ -1,0 +1,30 @@
+ID - TS_005
+Názov: Otestovanie Zoznam priani 
+Popis: Otestovanie základných funkčností 
+Preconditions: 
+    1. funkčné pripojenie k internetu
+    2. Google Chrome prehliadač
+    3. vstupno výstupne zariadenie na zadanie vstupu a získanie výstupu
+    4. užívateľ je prihlásený vo svojom profile na stránke aboutyou.sk
+
+    TC_001: verifikácia funkčnosti pridania produktu do svojho zoznamu priani
+        očakávaný výsledok: užívateľ je schopný si pridať akýkoľvek produkt do zoznamu priani
+        kroky testovania: 
+            1. užívateľ si nájde ľubovolný produkt
+            2. užívateľ klikne na tlačidlo srdiečka
+
+        výsledok testovania: po kliknutí na srdiečko sa aktualizuje zoznam priani a produkt sa doň uloží
+
+    TC_002: verifikácia funkčnosti zobrazenia zoznamu priani
+        očakávaný výsledok: užívateľovi sa zobrazí jeho zoznam priani 
+        kroky testovania:
+            1. užívateľ klikne na srdiečko v pravom hornom rohu
+        výsledok testovania: užívateľovi sa zobrazí jeho zoznam priani 
+
+    TC_003: verifikácia funkčnosti odstránenia produktu zo zoznamu priani
+        očakávaný výsledok: užívateľ je schopný odstrániť produkt zo zoznamu priani
+        kroky testovania: 
+            1. užívateľ sa nachádza vo svojom zozname priani
+            2. užívateľ prejde kurzorom na produkt ktorý chce odstraniť
+            3. po zobrazení možnosti produktu klikne na srdiečko
+        výsledok testovania: užívateľ je schopný odstrániť produkt zo zoznamu priani

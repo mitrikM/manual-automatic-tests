@@ -1,0 +1,48 @@
+ID - TS_006
+Názov: otestovanie funkčnosti tlačidiel zákaznického servisu 
+Popis: Otestovanie presmerovanie linkov
+Preconditions: 
+    1. funkčné pripojenie k internetu
+    2. Google Chrome prehliadač
+    3. vstupno výstupne zariadenie na zadanie vstupu a získanie výstupu
+
+
+    TC_001: verifikácia funkčnosti tlačidla "Kontakt"
+        očakávany výsledok: po kliknutí užívateľa presmeruje na stránku s kontaktami
+        
+        kroky testovania:
+            1. užívateľ sa nachádza na stránke "www.aboutyou.sk"
+            2. užívateľ sa presunie na koniec web stránky
+            3. v pasáži zákaznický servis klikne na tlačidlo Kontakt
+
+        vysledok testovania: po kliknutí užívateľa presmeruje na stránku "https://www.aboutyou.sk/h/kontakt"
+
+    TC_002: verifikácia funkčnosti tlačidla "Pomoc"
+        očakávany výsledok: po kliknutí užívateľa presmeruje na stránku centrum pomoci
+        
+        kroky testovania:
+            1. užívateľ sa nachádza na stránke "www.aboutyou.sk"
+            2. užívateľ sa presunie na koniec web stránky
+            3. v pasáži zákaznický servis klikne na tlačidlo Pomoc
+
+        vysledok testovania: po kliknutí užívateľa presmeruje na stránku "https://www.aboutyou.sk/h" 
+
+    TC_003: verifikácia funkčnosti tlačidla "Partnerský program"
+        očakávany výsledok: po kliknutí užívateľa presmeruje na stránku Partnerským programom
+        
+        kroky testovania:
+            1. užívateľ sa nachádza na stránke "www.aboutyou.sk"
+            2. užívateľ sa presunie na koniec web stránky
+            3. v pasáži zákaznický servis klikne na tlačidlo Partnerský program
+
+        vysledok testovania: po kliknutí užívateľa presmeruje na stránku "https://signup.cj.com/member/signup/publisher/?cid=5243644#/branded" 
+
+    TC_004: verifikácia funkčnosti tlačidla "Oblasť doručenia"
+        očakávany výsledok: po kliknutí užívateľa presmeruje na stránku s oblasťami doručenia
+        
+        kroky testovania:
+            1. užívateľ sa nachádza na stránke "www.aboutyou.sk"
+            2. užívateľ sa presunie na koniec web stránky
+            3. v pasáži zákaznický servis klikne na tlačidlo oblasť doručenia
+
+        vysledok testovania: po kliknutí užívateľa presmeruje na stránku "https://www.aboutyou.sk/vseobecne-obchodne-podmienky"

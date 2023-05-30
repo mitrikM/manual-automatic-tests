@@ -1,0 +1,48 @@
+ID - TS_009
+Názov: Testovanie výberu z hlavného menu
+Popis: otestovanie funkcionality presmerovania a zobrazenia kategórii z hlavného menu 
+Preconditions: 
+    1. funkčné pripojenie k internetu
+    2. Google Chrome prehliadač
+    3. vstupno výstupne zariadenie na zadanie vstupu a získanie výstupu
+    4. nachádzať sa na začiatku stránky www.aboutyou.sk 
+
+TC_001: presmerovanie na danú kategóriu
+    očakávaný výsledok: užívateľa presmeruje na stránku danej kategórie
+
+    kroky testovania:
+        1. užívateľ prejde na názov kategórie
+        2. užívateľ klikne na názov kategórie
+
+    výsledok testovania: užívateľa presmeruje na stránku danej kategórie
+
+TC_002: presmerovanie na danú podkatégoriu danej kategórie
+    očakávaný výsledok: užívateľa presmeruje na danú podkatégoriu danej kategórie
+
+    kroky testovania: 
+        1. užívateľ prejde na názov kategórie "oblečenie"
+        2. po zobrazení dropdown menu užívateľ klikne na podkategóriu "trička"
+
+    výsledok testovania: užívateľa presmeruje na danú podkatégoriu "trička" danej kategórie "oblečenie"
+
+TC_003: presmerovanie na top značku danej kategórie
+    očakávaný výsledok: užívateľa presmeruje na stránku kde sa zobrazí špecifická značka danej kategórie
+
+    kroky testovania: 
+        1. užívateľ prejde na názov kategórie "oblečenie"
+        2. po zobrazení dropdown menu užívateľ klikne na logo "tommy hilfiger"
+
+     očakávaný výsledok: užívateľa presmeruje na stránku kde sa zobrazí špecifická značka "tommy hilfiger" a ich oblečenie
+
+TC_004: presmerovanie na  rozsirenú kategóriu po výbere danej podkatégorie
+    očakávaný výsledok: užívateľa presmeruje na stránku kde mu zobrazí produkty podľa vybranej rozšírenej kategórie
+
+    kroky testovania:
+        1. užívateľ klikne myškou na kategóriu "oblečenie"
+        2. užívateľ klikne myškou na podkategóriu "tričká"
+        3. užívateľ klikne myškou na rozsirenú kategóriu "tričká s dlhým rukávom"
+
+    výsledok testovania: užívateľa presmeruje na stránku kde sa mu zobrazia trička s dlhým rukávom
+
+
+   

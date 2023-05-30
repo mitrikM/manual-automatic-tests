@@ -1,0 +1,70 @@
+ ID - TS_004
+Názov: Testovanie filtrovania, triedenia, zobrazenia produktov v kategórii tričká
+Popis: Otestovanie filtrácie, triedenia, zobrazenia produktov na základe vstupných parametrov
+Preconditions: 
+    1. funkčné pripojenie k internetu
+    2. Google Chrome prehliadač
+    3. vstupno výstupne zariadenie na zadanie vstupu a získanie výstupu
+    4. užívateľ je prihlásený vo svojom profile na stránke aboutyou.sk
+    5. užívateľ sa nachádza na stránke "https://www.aboutyou.sk/c/muzi/oblecenie/tricka-20324"
+
+    TC_001: verifikácia funkčnosti filtrácie na základe veľkosti
+        očakávaný výsledok: tričká sa vyfiltrujú na základe toho či je daný produkt dosupný v konrétnej veľkosti
+        kroky testovania:
+            1. užívateľ klikne na možnosť veľkosti
+            2. užívateľ klikne na danú veľkosť napr. L
+        výsledok testovania:
+            užívateľovi sa zobrazia tričká s veľkosťou L
+
+    TC_002: verifikácia funkčnosti filtrácie na základe farby
+        očakávaný výsledok: trikčá sa vyfiltrujú na základe toho či je daný produkt dosupný v konrétnej farbe
+        kroky testovania:
+            1. užívateľ klikne na možnosť Farba
+            2. vyberie si danú farbu
+        výsledok testovania: užívateľovi sa zobrazia tričká s danou farbou
+
+    TC_003: verifikácia funkčnosti filtrácie na základe značky
+        očakávaný výsledok: tričká sa vyfiltrujú na základe značky
+        kroky testovania:
+            1. užívateľa klikne na možnosť značka
+            2. užívateľ si nájde a klikne na značky, ktoré hladá alebo si ich nájde pomocou textového poľa "Hladať značky"
+        výsledok testovania: užívateľovi sa zobrazia dostupné trička danej značky
+    
+    TC_004: verifikácia funkčnosti filtrácie na základe ceny
+        očakávany výsledok: užívateľovi sa zobrazia tričká v cenovej relácii ktorú si vyberie
+        kroky testovania:
+            1. užívateľ klikne na možnosť Cena
+            2. užívateľ si vyberie minimálnu a maximálnu cenu
+        výsledok testovania: užívateľovi sa zobrazia dostupné tričká ktoré sú medzi minimálnou a maximálnou cenou
+    
+    TC_005: verifikácia funkčnosti filtrácie na základe výpredaju
+        očakávaný výsledok: užívateľovi sa zobrazia tričká, ktoré sú momentálne vo výpredaji
+        kroky testovania:
+            1. užívatel klikne na bool tlačidlo výpredaj
+        výsledok testovania: užívateľovi sa zobrazia tričká, ktoré sú momentálne vo výpredaji
+
+    TC_006: verifikácia funkčnosti resetovania filtrácie
+        očakávaný vysledok: užívateľovi sa zrušia všetky vybraté filtrácie na defaultné hodnoty
+
+        kroky testovania: 
+            1. užívateľ má vybraté filtry
+            2. užívateľ klikne na tlačidlo obnoviť všetko
+
+        výsledok testovania: užívateľovi sa resetujú filtre na defaultné hodnoty
+
+    TC_007: verifikácia funkčnosti triedenia na základe najnižšej ceny
+        očakávaný výsledok: užívateľovi sa potriedia produkty tak, aby sa na vrchu zobrazili najlacnejšie produkty
+
+        kroky testovania    
+            1. užívateľ klikne na tlačidlo triedenie
+            2. užívateľ klikne na tlačidlo najnižšia cena
+        
+        výsledok testovnia: užívateľovi sa zobrazia na vrchu produkty od najnižšej ceny
+    
+    TC_008: verifikácia funkčnosti zobrazenia produktov
+        očakávaný výsledok: užívateľ si je schopný vybrať či chce vidieť produkt samotný alebo produkt na modelovi
+        kroky testovia: 
+            1. užívatel klikne na tlačidlo Zobraziť
+            2. užívateľ klikne na tlačidlo model/-ka alebo zobrazenie produktu
+
+        výsledok testovania: na základe výberu od užívateľa sa zobrazí model/-ka alebo produkt, nie každý produkt je vyfotený s modelom/modelkou 

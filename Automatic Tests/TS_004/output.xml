@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.8.1 on win32)" generated="20220718 12:29:00.158" rpa="false" schemaversion="3">
+<suite id="s1" name="TS 004" source="C:\Users\marek\OneDrive\Počítač\MarekMitrik_www-aboutyou-sk_24-4-2022\Automatic Tests\TS_004\TS_004.robot">
+<test id="s1-t1" name="TC_001" line="33">
+<kw name="Otevri browser a stranku a zkontroluj">
+<arg>https://www.aboutyou.sk/c/muzi/oblecenie/tricka-20324</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220718 12:29:00.635" level="INFO">Opening browser 'Chrome' to base url 'https://www.aboutyou.sk/c/muzi/oblecenie/tricka-20324'.</msg>
+<status status="PASS" starttime="20220718 12:29:00.634" endtime="20220718 12:29:06.902"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220718 12:29:06.903" endtime="20220718 12:29:07.073"/>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20220718 12:29:07.131" level="INFO">Current location is 'https://www.aboutyou.sk/c/muzi/oblecenie/tricka-20324'.</msg>
+<status status="PASS" starttime="20220718 12:29:07.073" endtime="20220718 12:29:07.131"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//button[@id='onetrust-accept-btn-handler']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220718 12:29:07.131" endtime="20220718 12:29:07.182"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@id='onetrust-accept-btn-handler']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220718 12:29:07.182" level="INFO">Clicking element '//button[@id='onetrust-accept-btn-handler']'.</msg>
+<status status="PASS" starttime="20220718 12:29:07.182" endtime="20220718 12:29:07.465"/>
+</kw>
+<status status="PASS" starttime="20220718 12:29:00.634" endtime="20220718 12:29:07.466"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//span[contains(text(),'Veľkosť')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220718 12:29:07.466" endtime="20220718 12:29:07.536"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//span[contains(text(),'Veľkosť')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220718 12:29:07.536" level="INFO">Clicking element '//span[contains(text(),'Veľkosť')]'.</msg>
+<status status="PASS" starttime="20220718 12:29:07.536" endtime="20220718 12:29:07.744"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//button[normalize-space()='L']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220718 12:29:07.755" endtime="20220718 12:29:08.028"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[normalize-space()='L']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220718 12:29:08.029" level="INFO">Clicking element '//button[normalize-space()='L']'.</msg>
+<status status="PASS" starttime="20220718 12:29:08.029" endtime="20220718 12:29:08.276"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//a[@aria-label='L link']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220718 12:29:08.277" endtime="20220718 12:29:09.058"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>//a[@aria-label='L link']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20220718 12:29:09.175" level="INFO">Element '//a[@aria-label='L link']' is displayed.</msg>
+<status status="PASS" starttime="20220718 12:29:09.059" endtime="20220718 12:29:09.175"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220718 12:29:09.176" endtime="20220718 12:29:11.346"/>
+</kw>
+<status status="PASS" starttime="20220718 12:29:00.633" endtime="20220718 12:29:11.348"/>
+</test>
+<test id="s1-t2" name="TC_002" line="43">
+<kw name="Otevri browser a stranku a zkontroluj">
+<arg>https://www.aboutyou.sk/c/muzi/oblecenie/tricka-20324</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220718 12:29:11.359" level="INFO">Opening browser 'Chrome' to base url 'https://www.aboutyou.sk/c/muzi/oblecenie/tricka-20324'.</msg>
+<status status="PASS" starttime="20220718 12:29:11.358" endtime="20220718 12:29:17.179"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220718 12:29:17.179" endtime="20220718 12:29:17.365"/>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20220718 12:29:17.396" level="INFO">Current location is 'https://www.aboutyou.sk/c/muzi/oblecenie/tricka-20324'.</msg>
+<status status="PASS" starttime="20220718 12:29:17.365" endtime="20220718 12:29:17.397"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//button[@id='onetrust-accept-btn-handler']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220718 12:29:17.397" endtime="20220718 12:29:17.440"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@id='onetrust-accept-btn-handler']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220718 12:29:17.441" level="INFO">Clicking element '//button[@id='onetrust-accept-btn-handler']'.</msg>
+<status status="PASS" starttime="20220718 12:29:17.441" endtime="20220718 12:29:17.666"/>
+</kw>
+<status status="PASS" starttime="20220718 12:29:11.356" endtime="20220718 12:29:17.666"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//span[normalize-space()='Farba']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220718 12:29:17.667" endtime="20220718 12:29:17.824"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//span[normalize-space()='Farba']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220718 12:29:17.825" level="INFO">Clicking element '//span[normalize-space()='Farba']'.</msg>
+<status status="PASS" starttime="20220718 12:29:17.825" endtime="20220718 12:29:18.219"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//body/main/div/div/section[@data-testid='splitView']/div[@data-testid='sectionEnd']/div[@data-testid='FilterBar']/div/section[@data-testid='filterDropdownColor']/div[@data-testid='dropdown']/div[@data-testid='body']/div/div[@data-testid='filterDropdownContent']/div/div[@data-testid='filterDropdownSectionColor']/label[1]/span[1]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220718 12:29:18.222" endtime="20220718 12:29:18.512"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//body/main/div/div/section[@data-testid='splitView']/div[@data-testid='sectionEnd']/div[@data-testid='FilterBar']/div/section[@data-testid='filterDropdownColor']/div[@data-testid='dropdown']/div[@data-testid='body']/div/div[@data-testid='filterDropdownContent']/div/div[@data-testid='filterDropdownSectionColor']/label[1]/span[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220718 12:29:18.513" level="INFO">Clicking element '//body/main/div/div/section[@data-testid='splitView']/div[@data-testid='sectionEnd']/div[@data-testid='FilterBar']/div/section[@data-testid='filterDropdownColor']/div[@data-testid='dropdown']/div[@data-testid='body']/div/div[@data-testid='filterDropdownContent']/div/div[@data-testid='filterDropdownSectionColor']/label[1]/span[1]'.</msg>
+<status status="PASS" starttime="20220718 12:29:18.513" endtime="20220718 12:29:18.783"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//a[@aria-label='Modrá link']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220718 12:29:18.784" endtime="20220718 12:29:19.198"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>//a[@aria-label='Modrá link']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20220718 12:29:19.215" level="INFO">Element '//a[@aria-label='Modrá link']' is displayed.</msg>
+<status status="PASS" starttime="20220718 12:29:19.198" endtime="20220718 12:29:19.215"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220718 12:29:19.215" endtime="20220718 12:29:21.364"/>
+</kw>
+<status status="PASS" starttime="20220718 12:29:11.353" endtime="20220718 12:29:21.366"/>
+</test>
+<test id="s1-t3" name="TC_003" line="53">
+<kw name="Otevri browser a stranku a zkontroluj">
+<arg>https://www.aboutyou.sk/c/muzi/oblecenie/tricka-20324</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220718 12:29:21.377" level="INFO">Opening browser 'Chrome' to base url 'https://www.aboutyou.sk/c/muzi/oblecenie/tricka-20324'.</msg>
+<status status="PASS" starttime="20220718 12:29:21.375" endtime="20220718 12:29:27.868"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220718 12:29:27.868" endtime="20220718 12:29:28.020"/>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20220718 12:29:28.060" level="INFO">Current location is 'https://www.aboutyou.sk/c/muzi/oblecenie/tricka-20324'.</msg>
+<status status="PASS" starttime="20220718 12:29:28.021" endtime="20220718 12:29:28.060"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//button[@id='onetrust-accept-btn-handler']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220718 12:29:28.060" endtime="20220718 12:29:28.105"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@id='onetrust-accept-btn-handler']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220718 12:29:28.106" level="INFO">Clicking element '//button[@id='onetrust-accept-btn-handler']'.</msg>
+<status status="PASS" starttime="20220718 12:29:28.105" endtime="20220718 12:29:28.354"/>
+</kw>
+<status status="PASS" starttime="20220718 12:29:21.374" endtime="20220718 12:29:28.354"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//span[contains(text(),'Značka')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220718 12:29:28.355" endtime="20220718 12:29:28.421"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//span[contains(text(),'Značka')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220718 12:29:28.422" level="INFO">Clicking element '//span[contains(text(),'Značka')]'.</msg>
+<status status="PASS" starttime="20220718 12:29:28.422" endtime="20220718 12:29:28.682"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//input[@placeholder=' ']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220718 12:29:28.682" endtime="20220718 12:29:28.962"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//input[@placeholder=' ']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220718 12:29:28.963" level="INFO">Clicking element '//input[@placeholder=' ']'.</msg>
+<status status="PASS" starttime="20220718 12:29:28.962" endtime="20220718 12:29:29.104"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@placeholder=' ']</arg>
+<arg>4</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220718 12:29:29.105" level="INFO">Typing text '4' into text field '//input[@placeholder=' ']'.</msg>
+<status status="PASS" starttime="20220718 12:29:29.105" endtime="20220718 12:29:29.289"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//label[@class='sc-5hgxzv-0 kozUlE sc-e431ck-3 knocDW']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220718 12:29:29.290" endtime="20220718 12:29:29.318"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//label[@class='sc-5hgxzv-0 kozUlE sc-e431ck-3 knocDW']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220718 12:29:29.319" level="INFO">Clicking element '//label[@class='sc-5hgxzv-0 kozUlE sc-e431ck-3 knocDW']'.</msg>
+<status status="PASS" starttime="20220718 12:29:29.318" endtime="20220718 12:29:29.560"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//div[@class='sc-12e6agm-0 gwDGZJ sc-75p5i1-0 ceHrYk']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220718 12:29:29.561" level="INFO">Clicking element '//div[@class='sc-12e6agm-0 gwDGZJ sc-75p5i1-0 ceHrYk']'.</msg>
+<status status="PASS" starttime="20220718 12:29:29.561" endtime="20220718 12:29:29.891"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//a[@aria-label='4F link']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220718 12:29:29.893" endtime="20220718 12:29:30.104"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>//a[@aria-label='4F link']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20220718 12:29:30.440" level="INFO">Element '//a[@aria-label='4F link']' is displayed.</msg>
+<status status="PASS" starttime="20220718 12:29:30.105" endtime="20220718 12:29:30.440"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220718 12:29:30.443" endtime="20220718 12:29:32.714"/>
+</kw>
+<status status="PASS" starttime="20220718 12:29:21.372" endtime="20220718 12:29:32.716"/>
+</test>
+<test id="s1-t4" name="TC_004" line="67">
+<kw name="Otevri browser a stranku a zkontroluj">
+<arg>https://www.aboutyou.sk/c/muzi/oblecenie/tricka-20324</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220718 12:29:32.721" level="INFO">Opening browser 'Chrome' to base url 'https://www.aboutyou.sk/c/muzi/oblecenie/tricka-20324'.</msg>
+<status status="PASS" starttime="20220718 12:29:32.720" endtime="20220718 12:29:38.805"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220718 12:29:38.805" endtime="20220718 12:29:38.938"/>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20220718 12:29:39.022" level="INFO">Current location is 'https://www.aboutyou.sk/c/muzi/oblecenie/tricka-20324'.</msg>
+<status status="PASS" starttime="20220718 12:29:38.939" endtime="20220718 12:29:39.022"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//button[@id='onetrust-accept-btn-handler']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220718 12:29:39.022" endtime="20220718 12:29:39.078"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@id='onetrust-accept-btn-handler']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220718 12:29:39.078" level="INFO">Clicking element '//button[@id='onetrust-accept-btn-handler']'.</msg>
+<status status="PASS" starttime="20220718 12:29:39.078" endtime="20220718 12:29:39.364"/>
+</kw>
+<status status="PASS" starttime="20220718 12:29:32.719" endtime="20220718 12:29:39.364"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//span[normalize-space()='Cena']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220718 12:29:39.365" endtime="20220718 12:29:39.510"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//span[normalize-space()='Cena']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220718 12:29:39.512" level="INFO">Clicking element '//span[normalize-space()='Cena']'.</msg>
+<status status="PASS" starttime="20220718 12:29:39.511" endtime="20220718 12:29:39.835"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//div[@data-testid='Start']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220718 12:29:39.836" endtime="20220718 12:29:39.926"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>//div[@data-testid='Start']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20220718 12:29:39.943" level="INFO">Element '//div[@data-testid='Start']' is displayed.</msg>
+<status status="PASS" starttime="20220718 12:29:39.927" endtime="20220718 12:29:39.943"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>//div[@data-testid='End']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20220718 12:29:39.964" level="INFO">Element '//div[@data-testid='End']' is displayed.</msg>
+<status status="PASS" starttime="20220718 12:29:39.943" endtime="20220718 12:29:39.964"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220718 12:29:39.964" endtime="20220718 12:29:42.173"/>
+</kw>
+<status status="PASS" starttime="20220718 12:29:32.718" endtime="20220718 12:29:42.175"/>
+</test>
+<test id="s1-t5" name="TC_005" line="76">
+<kw name="Otevri browser a stranku a zkontroluj">
+<arg>https://www.aboutyou.sk/c/muzi/oblecenie/tricka-20324</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220718 12:29:42.185" level="INFO">Opening browser 'Chrome' to base url 'https://www.aboutyou.sk/c/muzi/oblecenie/tricka-20324'.</msg>
+<status status="PASS" starttime="20220718 12:29:42.184" endtime="20220718 12:29:47.710"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220718 12:29:47.710" endtime="20220718 12:29:47.875"/>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20220718 12:29:47.919" level="INFO">Current location is 'https://www.aboutyou.sk/c/muzi/oblecenie/tricka-20324'.</msg>
+<status status="PASS" starttime="20220718 12:29:47.875" endtime="20220718 12:29:47.920"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//button[@id='onetrust-accept-btn-handler']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220718 12:29:47.920" endtime="20220718 12:29:47.966"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@id='onetrust-accept-btn-handler']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220718 12:29:47.968" level="INFO">Clicking element '//button[@id='onetrust-accept-btn-handler']'.</msg>
+<status status="PASS" starttime="20220718 12:29:47.967" endtime="20220718 12:29:48.176"/>
+</kw>
+<status status="PASS" starttime="20220718 12:29:42.183" endtime="20220718 12:29:48.176"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//label[@class='sc-rxaslt-1 ePuDCE']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220718 12:29:48.178" endtime="20220718 12:29:48.309"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//label[@class='sc-rxaslt-1 ePuDCE']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220718 12:29:48.311" level="INFO">Clicking element '//label[@class='sc-rxaslt-1 ePuDCE']'.</msg>
+<status status="PASS" starttime="20220718 12:29:48.311" endtime="20220718 12:29:48.724"/>
+</kw>
+<kw name="Element Should Be Enabled" library="SeleniumLibrary">
+<arg>//input[@class='sc-1m0aw8i-2 fhdMlu']</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220718 12:29:48.724" endtime="20220718 12:29:49.124"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220718 12:29:49.125" endtime="20220718 12:29:51.337"/>
+</kw>
+<status status="PASS" starttime="20220718 12:29:42.180" endtime="20220718 12:29:51.339"/>
+</test>
+<test id="s1-t6" name="TC_006" line="83">
+<kw name="Otevri browser a stranku a zkontroluj">
+<arg>https://www.aboutyou.sk/c/muzi/oblecenie/tricka-20324</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220718 12:29:51.349" level="INFO">Opening browser 'Chrome' to base url 'https://www.aboutyou.sk/c/muzi/oblecenie/tricka-20324'.</msg>
+<status status="PASS" starttime="20220718 12:29:51.348" endtime="20220718 12:29:56.948"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220718 12:29:56.948" endtime="20220718 12:29:57.124"/>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20220718 12:29:57.214" level="INFO">Current location is 'https://www.aboutyou.sk/c/muzi/oblecenie/tricka-20324'.</msg>
+<status status="PASS" starttime="20220718 12:29:57.124" endtime="20220718 12:29:57.214"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//button[@id='onetrust-accept-btn-handler']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220718 12:29:57.214" endtime="20220718 12:29:57.279"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@id='onetrust-accept-btn-handler']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220718 12:29:57.280" level="INFO">Clicking element '//button[@id='onetrust-accept-btn-handler']'.</msg>
+<status status="PASS" starttime="20220718 12:29:57.280" endtime="20220718 12:29:57.541"/>
+</kw>
+<status status="PASS" starttime="20220718 12:29:51.346" endtime="20220718 12:29:57.541"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//label[@class='sc-rxaslt-1 ePuDCE']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220718 12:29:57.542" endtime="20220718 12:29:57.638"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//label[@class='sc-rxaslt-1 ePuDCE']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220718 12:29:57.639" level="INFO">Clicking element '//label[@class='sc-rxaslt-1 ePuDCE']'.</msg>
+<status status="PASS" starttime="20220718 12:29:57.639" endtime="20220718 12:29:58.003"/>
+</kw>
+<kw name="Element Should Be Enabled" library="SeleniumLibrary">
+<arg>//input[@class='sc-1m0aw8i-2 fhdMlu']</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220718 12:29:58.005" endtime="20220718 12:29:58.252"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@class='sc-vtiwso-0 cfbGmv sc-figrip-0 jvyhsd']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220718 12:29:58.253" level="INFO">Clicking element '//button[@class='sc-vtiwso-0 cfbGmv sc-figrip-0 jvyhsd']'.</msg>
+<status status="PASS" starttime="20220718 12:29:58.253" endtime="20220718 12:29:58.512"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220718 12:30:00.513" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220718 12:29:58.513" endtime="20220718 12:30:00.513"/>
+</kw>
+<kw name="Page Should Not Contain Button" library="SeleniumLibrary">
+<arg>//button[@class='sc-vtiwso-0 cfbGmv sc-figrip-0 jvyhsd']</arg>
+<doc>Verifies button ``locator`` is not found from current page.</doc>
+<msg timestamp="20220718 12:30:00.523" level="INFO">Current page does not contain button '//button[@class='sc-vtiwso-0 cfbGmv sc-figrip-0 jvyhsd']'.</msg>
+<msg timestamp="20220718 12:30:00.531" level="INFO">Current page does not contain input '//button[@class='sc-vtiwso-0 cfbGmv sc-figrip-0 jvyhsd']'.</msg>
+<status status="PASS" starttime="20220718 12:30:00.514" endtime="20220718 12:30:00.532"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220718 12:30:00.532" endtime="20220718 12:30:02.727"/>
+</kw>
+<status status="PASS" starttime="20220718 12:29:51.344" endtime="20220718 12:30:02.729"/>
+</test>
+<test id="s1-t7" name="TC_007" line="94">
+<kw name="Otevri browser a stranku a zkontroluj">
+<arg>https://www.aboutyou.sk/c/muzi/oblecenie/tricka-20324</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220718 12:30:02.733" level="INFO">Opening browser 'Chrome' to base url 'https://www.aboutyou.sk/c/muzi/oblecenie/tricka-20324'.</msg>
+<status status="PASS" starttime="20220718 12:30:02.733" endtime="20220718 12:30:07.871"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220718 12:30:07.871" endtime="20220718 12:30:08.066"/>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20220718 12:30:08.156" level="INFO">Current location is 'https://www.aboutyou.sk/c/muzi/oblecenie/tricka-20324'.</msg>
+<status status="PASS" starttime="20220718 12:30:08.066" endtime="20220718 12:30:08.156"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//button[@id='onetrust-accept-btn-handler']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220718 12:30:08.156" endtime="20220718 12:30:08.205"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@id='onetrust-accept-btn-handler']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220718 12:30:08.206" level="INFO">Clicking element '//button[@id='onetrust-accept-btn-handler']'.</msg>
+<status status="PASS" starttime="20220718 12:30:08.206" endtime="20220718 12:30:08.436"/>
+</kw>
+<status status="PASS" starttime="20220718 12:30:02.732" endtime="20220718 12:30:08.437"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//span[normalize-space()='Triedenie']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220718 12:30:08.437" endtime="20220718 12:30:08.551"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//span[normalize-space()='Triedenie']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220718 12:30:08.553" level="INFO">Clicking element '//span[normalize-space()='Triedenie']'.</msg>
+<status status="PASS" starttime="20220718 12:30:08.552" endtime="20220718 12:30:08.884"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//div[@data-testid='sortingOptionsDropdown-price_low']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220718 12:30:08.884" endtime="20220718 12:30:09.272"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//div[@data-testid='sortingOptionsDropdown-price_low']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220718 12:30:09.273" level="INFO">Clicking element '//div[@data-testid='sortingOptionsDropdown-price_low']'.</msg>
+<status status="PASS" starttime="20220718 12:30:09.273" endtime="20220718 12:30:09.769"/>
+</kw>
+<kw name="Create Session" library="RequestsLibrary">
+<arg>check URL adress</arg>
+<arg>https://www.aboutyou.sk</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<msg timestamp="20220718 12:30:09.770" level="INFO">Creating Session using : alias=check URL adress, url=https://www.aboutyou.sk, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20220718 12:30:09.770" endtime="20220718 12:30:09.771"/>
+</kw>
+<kw name="Get Request" library="RequestsLibrary">
+<var>${response}</var>
+<arg>check URL adress</arg>
+<arg>https://www.aboutyou.sk/c/muzi/oblecenie/tricka-20324?sort=price_low</arg>
+<doc>*DEPRECATED* Please use `GET On Session` instead.</doc>
+<msg timestamp="20220718 12:30:09.772" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
+<msg timestamp="20220718 12:30:10.561" level="INFO">GET Request : url=https://www.aboutyou.sk/c/muzi/oblecenie/tricka-20324?sort=price_low 
+ path_url=/c/muzi/oblecenie/tricka-20324?sort=price_low 
+ headers={'User-Agent': 'python-requests/2.28.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg timestamp="20220718 12:30:10.562" level="INFO">GET Response : url=https://www.aboutyou.sk/c/muzi/oblecenie/tricka-20324?sort=price_low 
+ status=200, reason=OK 
+ headers={'Date': 'Mon, 18 Jul 2022 10:30:10 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'CF-Ray': '72ca8a596b9a78a3-VIE', 'Age': '0', 'Link': '&lt;https://cdn.aboutstatic.com&gt;;rel=preconnect,&lt;https://tadarida-web.aboutyou.com&gt;;rel=preconnect;crossorigin,&lt;/assets/js/runtime.fc8b52e3.js&gt;;rel=preload;as=script,&lt;/assets/js/client.2cb5be02.js&gt;;rel=preload;as=script,&lt;/assets/js/Category-eager.d85a67574.chunk.js&gt;;rel=preload;as=script,&lt;/assets/css/6047.5ae56200.css&gt;;rel=preload;as=style', 'Set-Cookie': 'ay-ab-test-user-id=53717f3a-e33a-4fda-8321-db4700f99905; Expires=Tue, 20 Sep 2022 10:30:10 GMT; Domain=.aboutyou.sk; Path=/; Secure, ay-active-ab-tests=; Expires=Tue, 20 Sep 2022 10:30:10 GMT; Domain=.aboutyou.sk; Path=/; Secure, __cf_bm=P9pND7gD29tCT6DFCY95AjZs0fklVOUFegPQq0Qm34M-1658140210-0-Acihvo57wh18FiM54urWc/QIgbtUh0cgPANPayw/5YXDgu3dVqzxIWn5xrNEiaDKxwzvPQkr7jtZ3C8Wfw+++7EfJcfyZCHhHh4jHgT59ivE; path=/; expires=Mon, 18-Jul-22 11:00:10 GMT; domain=.aboutyou.sk; HttpOnly; Secure; SameSite=None, __cfruid=acbc9389c35038218d75251a72f2d09580c0742f-1658140210; path=/; domain=.aboutyou.sk; HttpOnly; Secure; SameSite=None', 'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload', 'Vary': 'Accept-Encoding', 'Via': '1.1 varnish (Varnish/6.0)', 'CF-Cache-Status': 'DYNAMIC', 'Expect-CT': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"', 'X-Content-Type-Options': 'nosniff', 'X-Optimizely-Worker': 'true', 'X-Varnish': '1026546805', 'X-Varnish-Cache': 'miss cached', 'X-Varnish-Host': 'ayd-p-varnish-ip-10-110-59-72', 'Server': 'cloudflare', 'Content-Encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400, h3-29=":443"; ma=86400'} 
+ body=&lt;!doctype html&gt;
+    &lt;html lang="sk" dir="ltr"&gt;
+      &lt;head&gt;&lt;meta charSet="utf-8"/&gt;&lt;meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/&gt;&lt;meta name="version" content="build-54dbe9bd"/&gt;&lt;meta name="version_name" content="app-v817.0.0"/&gt;&lt;meta data-rh="true" content="index, follow" name="robots" data-testid="Meta-robots"/&gt;&lt;meta data-rh="true" content="Pánske tričká na ABOUT YOU – do mesta, posilky, elegantné aj len tak na doma ➢ všetky s poštovným zadarmo! ✓Dobierka ✓Vrátenie zadarmo" name="description" data-testid="Meta-description"/&gt;&lt;title data-rh="true" data-testid="MetaTitle"&gt;Pánske tričká » nakupuj značkové kúsky na ABOUT YOU&lt;/title&gt;&lt;link data-rh="true" rel="preload" href="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" as="script"/&gt;&lt;link data-rh="true" rel="canonical" href="https://www.aboutyou.sk/c/muzi/oblecenie/tricka-20324" data-testid="LinkCanonical"/&gt;&lt;link data-rh="true" rel="alternate" href="https://m.aboutyou.sk/c/muzi/oblecenie/tricka-20324" media="only screen and (max-width: 640px)" data-testid="MobileAlternate"/&gt;&lt;link data-rh="true" rel="alternate" href="https://www.aboutyou.sk/c/muzi/oblecenie/tricka-20324" hrefLang="sk-SK" data-testid="Hreflang"/&gt;&lt;link data-rh="true" rel="alternate" href="https://www.aboutyou.cz/c/muzi/obleceni/tricka-20324" hrefLang="cs-CZ" data-testid="Hreflang"/&gt;&lt;link data-rh="true" rel="alternate" href="https://www.aboutyou.pl/c/mezczyzni/odziez/koszulki-20324" hrefLang="pl-PL" data-testid="Hreflang"/&gt;&lt;link data-rh="true" rel="preload" as="image" imageSizes="(min-resolution: 4dppx) calc(100vw / 16), (min-resolution: 3dppx) calc(100vw / 12), (min-resolution: 2dppx) calc(100vw / 8), (min-resolution: 1.5dppx) calc(100vw / 6), calc(100vw / 4)" imageSrcSet="https://cdn.aboutstatic.com/file/images/34bf8281f8040ba755c553350c0e1b7d.jpg?brightness=0.96&amp;amp;quality=75&amp;amp;trim=1&amp;amp;height=160&amp;amp;width=120 120w, https://cdn.aboutstatic.com/file/images/34bf8281f8040ba755c553350c0e1b7d.jpg?brightness=0.96&amp;amp;quality=75&amp;amp;trim=1&amp;amp;height=480&amp;amp;width=360 360w, https://cdn.aboutstatic.com/file/images/34bf8281f8040ba755c553350c0e1b7d.jpg?brightness=0.96&amp;amp;quality=75&amp;amp;trim=1&amp;amp;height=534&amp;amp;width=400 400w, https://cdn.aboutstatic.com/file/images/34bf8281f8040ba755c553350c0e1b7d.jpg?brightness=0.96&amp;amp;quality=75&amp;amp;trim=1&amp;amp;height=800&amp;amp;width=600 600w, https://cdn.aboutstatic.com/file/images/34bf8281f8040ba755c553350c0e1b7d.jpg?brightness=0.96&amp;amp;quality=75&amp;amp;trim=1&amp;amp;height=1067&amp;amp;width=800 800w, https://cdn.aboutstatic.com/file/images/34bf8281f8040ba755c553350c0e1b7d.jpg?brightness=0.96&amp;amp;quality=75&amp;amp;trim=1&amp;amp;height=1280&amp;amp;width=960 960w"/&gt;&lt;link rel="icon" href="/favicon.ico" sizes="any" type="image/x-icon"/&gt;&lt;link rel="icon" href="/icon.svg" type="image/svg+xml"/&gt;&lt;link rel="apple-touch-icon" href="/apple-touch-icon.png"/&gt;&lt;link rel="manifest" href="/manifest.json"/&gt;&lt;script data-rh="true" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" data-document-language="true" type="text/javascript" charSet="UTF-8" async="" data-domain-script="8a855455-ef1b-485c-a4bc-ce350e40347d"&gt;&lt;/script&gt;&lt;script&gt;window.___webTracking_buffer = [];
+window.requireWebTrackingUtils = function(deps, cb) {
+  window.___webTracking_buffer.push({deps:deps,cb:cb});
+};
+window.requireWebTrackingUtils._initialized = false;
+window.syncWebTrackingUtils = {
+  getCookie: (function(){var t=function(){for(var t=document.cookie.split(";"),e={},o=0;o&lt;t.length;o++){for(var r=t[o];" "===r.charAt(0);)r=r.substring(1,r.length);var n=r.indexOf("="),c=r.substring(0,n),i=r.substring(n+1,r.length);e[c]=i}return e},e=!1,o=t(),r="function"==typeof Object.getOwnPropertyDescriptor&amp;&amp;(Object.getOwnPropertyDescriptor(Document.prototype,"cookie")||Object.getOwnPropertyDescriptor(HTMLDocument.prototype,"cookie")),n=Boolean(r&amp;&amp;r.configurable);return n&amp;&amp;void 0!==r&amp;&amp;Object.defineProperty(document,"cookie",{get:function(){return r.get.call(document)},set:function(t){e=!0,r.set.call(document,t)}}),function(r){return n&amp;&amp;!e||(o=t(),e=!1),void 0===o[r]?null:o[r]}})(),
+  md5: (function(n){function r(n,r,t,e,u,o,c){var f=n+(r&amp;t|~r&amp;e)+(u&gt;&gt;&gt;0)+c;return(f&lt;&lt;o|f&gt;&gt;&gt;32-o)+r}function t(n,r,t,e,u,o,c){var f=n+(r&amp;e|t&amp;~e)+(u&gt;&gt;&gt;0)+c;return(f&lt;&lt;o|f&gt;&gt;&gt;32-o)+r}function e(n,r,t,e,u,o,c){var f=n+(r^t^e)+(u&gt;&gt;&gt;0)+c;return(f&lt;&lt;o|f&gt;&gt;&gt;32-o)+r}function u(n,r,t,e,u,o,c){var f=n+(t^(r|~e))+(u&gt;&gt;&gt;0)+c;return(f&lt;&lt;o|f&gt;&gt;&gt;32-o)+r}function o(n){return String.fromCharCode(255&amp;n)}function c(n){return o(n)+o(n&gt;&gt;&gt;8)+o(n&gt;&gt;&gt;16)+o(n&gt;&gt;&gt;24)}return function(n){for(var o=function(n){for(var r=n.length,t=r&lt;&lt;3,e=new Uint32Array(r+72&gt;&gt;&gt;6&lt;&lt;4),u=0,o=n.length;u&lt;o;++u)e[u&gt;&gt;&gt;2]|=n.charCodeAt(u)&lt;&lt;((3&amp;u)&lt;&lt;3);return e[r&gt;&gt;2]|=128&lt;&lt;(31&amp;t),e[e.length-2]=t,e}(n),f=1732584193,i=4023233417,a=2562383102,h=271733878,v=0,g=o.length;v&lt;g;v+=16){var s=f,d=i,l=a,C=h;f=r(f,i,a,h,o[v+0],7,3614090360),h=r(h,f,i,a,o[v+1],12,3905402710),a=r(a,h,f,i,o[v+2],17,606105819),i=r(i,a,h,f,o[v+3],22,3250441966),f=r(f,i,a,h,o[v+4],7,4118548399),h=r(h,f,i,a,o[v+5],12,1200080426),a=r(a,h,f,i,o[v+6],17,2821735955),i=r(i,a,h,f,o[v+7],22,4249261313),f=r(f,i,a,h,o[v+8],7,1770035416),h=r(h,f,i,a,o[v+9],12,2336552879),a=r(a,h,f,i,o[v+10],17,4294925233),i=r(i,a,h,f,o[v+11],22,2304563134),f=r(f,i,a,h,o[v+12],7,1804603682),h=r(h,f,i,a,o[v+13],12,4254626195),a=r(a,h,f,i,o[v+14],17,2792965006),f=t(f,i=r(i,a,h,f,o[v+15],22,1236535329),a,h,o[v+1],5,4129170786),h=t(h,f,i,a,o[v+6],9,3225465664),a=t(a,h,f,i,o[v+11],14,643717713),i=t(i,a,h,f,o[v+0],20,3921069994),f=t(f,i,a,h,o[v+5],5,3593408605),h=t(h,f,i,a,o[v+10],9,38016083),a=t(a,h,f,i,o[v+15],14,3634488961),i=t(i,a,h,f,o[v+4],20,3889429448),f=t(f,i,a,h,o[v+9],5,568446438),h=t(h,f,i,a,o[v+14],9,3275163606),a=t(a,h,f,i,o[v+3],14,4107603335),i=t(i,a,h,f,o[v+8],20,1163531501),f=t(f,i,a,h,o[v+13],5,2850285829),h=t(h,f,i,a,o[v+2],9,4243563512),a=t(a,h,f,i,o[v+7],14,1735328473),f=e(f,i=t(i,a,h,f,o[v+12],20,2368359562),a,h,o[v+5],4,4294588738),h=e(h,f,i,a,o[v+8],11,2272392833),a=e(a,h,f,i,o[v+11],16,1839030562),i=e(i,a,h,f,o[v+14],23,4259657740),f=e(f,i,a,h,o[v+1],4,2763975236),h=e(h,f,i,a,o[v+4],11,1272893353),a=e(a,h,f,i,o[v+7],16,4139469664),i=e(i,a,h,f,o[v+10],23,3200236656),f=e(f,i,a,h,o[v+13],4,681279174),h=e(h,f,i,a,o[v+0],11,3936430074),a=e(a,h,f,i,o[v+3],16,3572445317),i=e(i,a,h,f,o[v+6],23,76029189),f=e(f,i,a,h,o[v+9],4,3654602809),h=e(h,f,i,a,o[v+12],11,3873151461),a=e(a,h,f,i,o[v+15],16,530742520),f=u(f,i=e(i,a,h,f,o[v+2],23,3299628645),a,h,o[v+0],6,4096336452),h=u(h,f,i,a,o[v+7],10,1126891415),a=u(a,h,f,i,o[v+14],15,2878612391),i=u(i,a,h,f,o[v+5],21,4237533241),f=u(f,i,a,h,o[v+12],6,1700485571),h=u(h,f,i,a,o[v+3],10,2399980690),a=u(a,h,f,i,o[v+10],15,4293915773),i=u(i,a,h,f,o[v+1],21,2240044497),f=u(f,i,a,h,o[v+8],6,1873313359),h=u(h,f,i,a,o[v+15],10,4264355552),a=u(a,h,f,i,o[v+6],15,2734768916),i=u(i,a,h,f,o[v+13],21,1309151649),f=u(f,i,a,h,o[v+4],6,4149444226),h=u(h,f,i,a,o[v+11],10,3174756917),a=u(a,h,f,i,o[v+2],15,718787259),i=u(i,a,h,f,o[v+9],21,3951481745),f=f+s&gt;&gt;&gt;0,i=i+d&gt;&gt;&gt;0,a=a+l&gt;&gt;&gt;0,h=h+C&gt;&gt;&gt;0}for(var m=c(f)+c(i)+c(a)+c(h),p="",A=0,S=m.length;A&lt;S;++A)p+=(256+(255&amp;m.charCodeAt(A))).toString(16).substr(-2);return p}(function(n){return unescape(encodeURIComponent(n))}(n))})
+};
+&lt;/script&gt;&lt;script&gt;(function(w,d,s,l,i){w[l]=w[l]||[];
+              w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+              var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';
+              j.async=true;j.src='//t.aboutyou.sk/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-N45J6W4')&lt;/script&gt;&lt;meta name="ssr"/&gt;&lt;script id="newrelic-browser-script" type="text/javascript"&gt;;window.NREUM||(NREUM={});NREUM.init={distributed_tracing:{enabled:true},privacy:{cookies_enabled:false}};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o&lt;n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&amp;&amp;console.log(t)}catch(e){}}var o,i=t("ee"),a=t(29),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&amp;&amp;"function"==typeof console.log&amp;&amp;(c.console=!0,o.indexOf("dev")!==-1&amp;&amp;(c.dev=!0),o.indexOf("nr_dev")!==-1&amp;&amp;(c.nrDev=!0))}catch(s){}c.nrDev&amp;&amp;i.on("internal-error",function(t){r(t.stack)}),c.dev&amp;&amp;i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&amp;&amp;(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,c){try{p?p-=1:o(c||new UncaughtException(t,e,n),!0)}catch(f){try{i("ierr",[f,s.now(),!0])}catch(d){}}return"function"==typeof u&amp;&amp;u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t,e){var n=e?null:s.now();i("err",[t,n])}var i=t("handle"),a=t(30),c=t("ee"),s=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError";if(!s.disabled){var p=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&amp;&amp;(t(13),t(12),"addEventListener"in window&amp;&amp;t(6),s.xhrWrappable&amp;&amp;t(14),d=!0)}c.on("fn-start",function(t,e,n){d&amp;&amp;(p+=1)}),c.on("fn-err",function(t,e,n){d&amp;&amp;!n[l]&amp;&amp;(f(n,l,function(){return!0}),this.thrown=!0,o(n))}),c.on("fn-end",function(){d&amp;&amp;!this.thrown&amp;&amp;p&gt;0&amp;&amp;(p-=1)}),c.on("internal-error",function(t){i("ierr",[t,s.now(),!0])})}},{}],3:[function(t,e,n){var r=t("loader");r.disabled||(r.features.ins=!0)},{}],4:[function(t,e,n){function r(){L++,T=g.hash,this[u]=y.now()}function o(){L--,g.hash!==T&amp;&amp;i(0,!0);var t=y.now();this[h]=~~this[h]+t-this[u],this[d]=t}function i(t,e){E.emit("newURL",[""+g,e])}function a(t,e){t.on(e,function(){this[e]=y.now()})}var c="-start",s="-end",f="-body",u="fn"+c,d="fn"+s,l="cb"+c,p="cb"+s,h="jsTime",m="fetch",v="addEventListener",w=window,g=w.location,y=t("loader");if(w[v]&amp;&amp;y.xhrWrappa... (set the log level to DEBUG or TRACE to see the full content) 
+ </msg>
+<msg timestamp="20220718 12:30:10.563" level="INFO">c:\users\marek\appdata\local\programs\python\python38-32\lib\site-packages\urllib3\connectionpool.py:1043: InsecureRequestWarning: Unverified HTTPS request is being made to host 'www.aboutyou.sk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+  warnings.warn(</msg>
+<msg timestamp="20220718 12:30:10.563" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20220718 12:30:09.772" endtime="20220718 12:30:10.563"/>
+</kw>
+<kw name="Convert To String" library="BuiltIn">
+<var>${statusCode}</var>
+<arg>${response.status_code}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<msg timestamp="20220718 12:30:10.566" level="INFO">${statusCode} = 200</msg>
+<status status="PASS" starttime="20220718 12:30:10.565" endtime="20220718 12:30:10.566"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${statusCode}</arg>
+<arg>200</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20220718 12:30:10.566" endtime="20220718 12:30:10.566"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${response.status_code}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220718 12:30:10.566" endtime="20220718 12:30:10.567"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220718 12:30:10.568" endtime="20220718 12:30:12.722"/>
+</kw>
+<status status="PASS" starttime="20220718 12:30:02.731" endtime="20220718 12:30:12.723"/>
+</test>
+<test id="s1-t8" name="TC_008" line="109">
+<kw name="Otevri browser a stranku a zkontroluj">
+<arg>https://www.aboutyou.sk/c/muzi/oblecenie/tricka-20324</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220718 12:30:12.731" level="INFO">Opening browser 'Chrome' to base url 'https://www.aboutyou.sk/c/muzi/oblecenie/tricka-20324'.</msg>
+<status status="PASS" starttime="20220718 12:30:12.730" endtime="20220718 12:30:18.137"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220718 12:30:18.137" endtime="20220718 12:30:18.343"/>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20220718 12:30:18.505" level="INFO">Current location is 'https://www.aboutyou.sk/c/muzi/oblecenie/tricka-20324'.</msg>
+<status status="PASS" starttime="20220718 12:30:18.343" endtime="20220718 12:30:18.505"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//button[@id='onetrust-accept-btn-handler']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220718 12:30:18.505" endtime="20220718 12:30:18.554"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@id='onetrust-accept-btn-handler']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220718 12:30:18.554" level="INFO">Clicking element '//button[@id='onetrust-accept-btn-handler']'.</msg>
+<status status="PASS" starttime="20220718 12:30:18.554" endtime="20220718 12:30:18.846"/>
+</kw>
+<status status="PASS" starttime="20220718 12:30:12.729" endtime="20220718 12:30:18.846"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//span[contains(text(),'Zobraziť')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220718 12:30:18.847" endtime="20220718 12:30:18.974"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//span[contains(text(),'Zobraziť')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220718 12:30:18.976" level="INFO">Clicking element '//span[contains(text(),'Zobraziť')]'.</msg>
+<status status="PASS" starttime="20220718 12:30:18.976" endtime="20220718 12:30:19.312"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//div[@class='sc-1hijt0p-1 bjeDWu']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220718 12:30:19.314" endtime="20220718 12:30:19.701"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220718 12:30:19.702" endtime="20220718 12:30:22.069"/>
+</kw>
+<status status="PASS" starttime="20220718 12:30:12.728" endtime="20220718 12:30:22.070"/>
+</test>
+<status status="PASS" starttime="20220718 12:29:00.160" endtime="20220718 12:30:22.074"/>
+</suite>
+<statistics>
+<total>
+<stat pass="8" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="8" fail="0" skip="0" id="s1" name="TS 004">TS 004</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220718 12:30:09.772" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
+</errors>
+</robot>
